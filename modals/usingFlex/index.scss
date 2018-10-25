@@ -1,0 +1,10 @@
+@import 'popup.scss';
+// @import 'animations/fadeInAnimation.scss';
+// @import 'animations/topAnimation.scss';
+@import 'animations/leftAnimation.scss';
+
+.pop-up-content {
+    height: 500px;
+    width: 500px;
+    background: #f2f2f2;
+}

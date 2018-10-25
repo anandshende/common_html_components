@@ -1,0 +1,12 @@
+.pop-up-content {
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.pop-up-content-opaque {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=fadeInAnimation.css.map */

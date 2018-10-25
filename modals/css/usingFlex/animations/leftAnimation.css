@@ -1,0 +1,20 @@
+.pop-up-content {
+  animation: slide-from-top 0.3s forwards;
+  transform: translate(-100%, 0);
+  display: none;
+}
+
+@keyframes slide-from-top {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.pop-up-content-opaque {
+  display: block;
+  z-index: 999;
+}
+
+/*# sourceMappingURL=leftanimation.css.map */
