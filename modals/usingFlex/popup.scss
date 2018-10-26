@@ -1,3 +1,5 @@
+@import './config.scss';
+
 .pop-up-background {
     position: fixed;
     top: 0;
@@ -5,7 +7,7 @@
     left: 0;
     right: 0;
     display: flex;
-    background: rgba(0, 0, 0, 0.3); 
+    background: $background; 
     // Background is purposely set using rgba to 
     // not affect the child opacity.
     justify-content: center;

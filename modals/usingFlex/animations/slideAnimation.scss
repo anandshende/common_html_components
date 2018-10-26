@@ -1,6 +1,9 @@
+@import '../config.scss';
+
+
 .pop-up-content {
-    animation: slide-from-top 0.3s forwards;
-    transform: translate(-100%, 0);
+    animation: slide-from-top $animationSpeed forwards;
+    transform: translate($translatePercentageOffsetX, $translatePercentageOffsetY);
     display: none;
 }
 

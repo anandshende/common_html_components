@@ -1,6 +1,6 @@
 .pop-up-content {
   animation: slide-from-top 0.3s forwards;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, 0%);
   display: none;
 }
 
@@ -17,4 +17,4 @@
   z-index: 999;
 }
 
-/*# sourceMappingURL=leftanimation.css.map */
+/*# sourceMappingURL=slideanimation.css.map */

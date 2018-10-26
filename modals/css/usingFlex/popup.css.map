@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../usingflex/popup.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AAGJ;EACI","file":"popup.css"}
+{"version":3,"sourceRoot":"","sources":["../../usingflex/popup.scss","../../usingflex/config.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA,YCHS;EDMT;;;AAGJ;EACI","file":"popup.css"}
