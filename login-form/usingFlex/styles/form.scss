@@ -1,0 +1,33 @@
+@import './config.scss';
+
+.text-container-box {
+    margin: 20px 20px;
+}
+
+.email-box {
+}
+
+.password-box {
+}
+
+.textbox {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid $textBoxBorderBottom;
+    padding: 10px 15px;
+} 
+
+.textbox:hover,
+.textbox:focus {
+    border-color: $textBoxFocusBorderBottom;
+}
+
+.email-textbox {
+
+}
+
+.password-textbox {
+
+}

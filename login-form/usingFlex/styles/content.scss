@@ -1,0 +1,55 @@
+@import './config.scss';
+@import './header.scss';
+@import './form.scss';
+@import './button.scss';
+
+* {
+    box-sizing: border-box;
+}
+   
+body {}
+
+.main-container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+}
+
+.central-container {
+    align-self: center;
+    background: $centralContainerBackground;
+    width: 400px;
+}
+
+.header-container {
+    text-align: center;
+    background: $headerBackground;
+}
+
+.form-container {
+    padding-top: 30px;
+}
+
+.buttons-container {
+    text-align: center;
+    margin: 50px 20px 40px 20px;
+    display: flex;
+}
+ 
+@media screen and (max-width: 500px) {
+    .central-container {
+        width: 300px;
+    }
+
+    .form-container {
+        padding-top: 0;
+    }
+
+    .buttons-container {
+        margin: 40px 20px 20px 20px;
+    }
+}

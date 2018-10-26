@@ -1,11 +1,3 @@
-@import 'config.scss';
-
 @import 'popup.scss';
-@import 'animations/fadeInAnimation.scss';
+@import 'animations/fadeInAnimation.scss'; 
 // @import 'animations/slideAnimation.scss';
-
-.pop-up-content {
-    height: 500px;
-    width: 500px;
-    background: $contentBackground;
-}

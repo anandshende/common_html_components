@@ -1,5 +1,9 @@
 @import './config.scss';
 
+* {
+    box-sizing: border-box;
+}
+
 .pop-up-background {
     position: fixed;
     top: 0;
@@ -17,3 +21,8 @@
     align-self: center;
 }
 
+.pop-up-content {
+    height: 500px;
+    width: 500px;
+    background: $contentBackground;
+}
