@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-}
+} 
    
 body {}
 
@@ -33,13 +33,13 @@ body {}
 .form-container {
     padding-top: 30px;
 }
-
+ 
 .buttons-container {
     text-align: center;
-    margin: 50px 20px 40px 20px;
+    margin: 50px 20px 40px 20px; 
     display: flex;
 }
- 
+  
 @media screen and (max-width: 500px) {
     .central-container {
         width: 300px;
