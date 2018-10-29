@@ -1,0 +1,27 @@
+@import './config.scss';
+@import './list.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.left-container {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: $MENU_WIDTH;
+    background: $MENU_ITEM_BKGD_COLOR;
+    color: $MENU_ITEM_COLOR;
+}
+.right-container {
+    flex: 1;
+}

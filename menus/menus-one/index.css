@@ -1,0 +1,72 @@
+.list-container {
+  margin-top: 50px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-element {
+  width: 100%;
+  font-size: 20px;
+  font-variant-caps: petite-caps;
+  font-family: monospace;
+  cursor: pointer;
+  padding: 10px 20px 10px 50px;
+}
+
+.list-element.active,
+.list-element:hover {
+  background: #1b9bff;
+  border: 1px solid #333333;
+  padding: 9px 19px 9px 49px;
+}
+
+.list-item-icon-container {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+.svg-container {
+  width: 100%;
+  height: 100%;
+}
+
+.firstb {
+  fill: white;
+}
+
+.secondb {
+  fill: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.left-container {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background: #333333;
+  color: #ffffff;
+}
+
+.right-container {
+  flex: 1;
+}
+
+/*# sourceMappingURL=index.css.map */
