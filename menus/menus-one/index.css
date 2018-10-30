@@ -8,6 +8,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -21,7 +22,8 @@
 }
 
 .right-container {
-  flex: 1;
+  -ms-flex: 1;
+      flex: 1;
   background: #dddddd;
 }
 
@@ -136,5 +138,3 @@
     padding-left: 49px;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
