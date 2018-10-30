@@ -36,5 +36,28 @@
 }
 
 // Clases inside SVG
-.firstb { fill: white; }
-.secondb { fill: white; }
+.svg-home-icon { fill: $MENU_ITEM_COLOR; stroke: $MENU_ITEM_COLOR; }
+.svg-close-icon {fill: $MENU_ITEM_COLOR; stroke: $MENU_ITEM_COLOR; }
+
+@media screen and (max-width: 900px) {
+    .list-element {
+        padding-left: 20px;
+    }
+
+    .list-element.active,
+    .list-element:hover {
+        padding-left: 19px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .list-element {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .list-element.active,
+    .list-element:hover {
+        padding-left: 9px;
+    }
+}

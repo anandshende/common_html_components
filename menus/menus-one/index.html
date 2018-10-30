@@ -9,6 +9,13 @@
 
     <link rel="stylesheet" href="./index.css">
 
+    <script>
+        function toggleMenu() {
+            document.getElementsByClassName('left-container')[0].classList.toggle('mobile-list-container');
+            document.getElementById('mobileMenuIcon').classList.toggle('mobile-menu-icon-hide');
+        }
+    </script>
+
 </head>
 
 <body>
@@ -36,6 +43,12 @@
                     </li>
                 </ul>
             </div>
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <object class="svg-container" data="./images/close.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+        <div id="mobileMenuIcon" class="mobile-menu-icon" onclick="toggleMenu()">
+            <object class="svg-container" data="./images/menu.svg" type="image/svg+xml"></object>
         </div>
         <div class="right-container">
 
