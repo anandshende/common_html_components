@@ -20,7 +20,7 @@
 .list-element.active,
 .list-element:hover {
     background: $MENU_SELECTED_ITEM_BKGD_COLOR;
-    border: 1px solid #333333;
+    border: 1px solid $LEFT_CONTAINER_BKG;
     padding: 9px 19px 9px 49px;
 }
 
