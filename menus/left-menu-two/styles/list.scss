@@ -31,6 +31,7 @@
     width: $LEFT_CONTAINER_WIDTH;
     height: $LEFT_CONTAINER_WIDTH;    
     display: inline-block;
+    cursor: pointer;
     float: left;
     padding: calc( #{$LEFT_CONTAINER_WIDTH} / 4 );
 }
@@ -55,10 +56,6 @@
 .svg-home-icon, 
 .svg-close-icon {
     fill: $LIST_ELEMENT_COLOR;
-    stroke: $LIST_ELEMENT_COLOR;
-}
-
-.svg-icon-container:hover .svg-home-icon {
-    fill: $ICON_HOVERED_COLOR;
-    stroke: $ICON_HOVERED_COLOR;
+    stroke: $LIST_ELEMENT_COLOR; 
+    cursor: pointer;
 }

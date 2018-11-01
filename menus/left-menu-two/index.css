@@ -8,20 +8,17 @@
   bottom: 0;
   top: 0;
   right: 0;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .left-container {
   width: 40px;
   background: #333333;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .right-container {
-  -ms-flex: 1;
-      flex: 1;
+  flex: 1;
   background: #dddddd;
 }
 
@@ -58,6 +55,7 @@
   width: 40px;
   height: 40px;
   display: inline-block;
+  cursor: pointer;
   float: left;
   padding: calc( 40px / 4 );
 }
@@ -82,9 +80,7 @@
 .svg-close-icon {
   fill: #ffffff;
   stroke: #ffffff;
+  cursor: pointer;
 }
 
-.svg-icon-container:hover .svg-home-icon {
-  fill: #333333;
-  stroke: #333333;
-}
+/*# sourceMappingURL=index.css.map */
