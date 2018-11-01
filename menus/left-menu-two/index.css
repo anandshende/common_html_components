@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-container {
+  width: 40px;
+  background: #333333;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-container {
+  -ms-flex: 1;
+      flex: 1;
+  background: #dddddd;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.list-element {
+  color: #ffffff;
+  font-size: 20px;
+  font-variant-caps: petite-caps;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.list-element:hover {
+  background: #2c3b41;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.svg-container {
+  width: calc( 40px / 2 );
+  height: calc( 40px / 2 );
+}
+
+.svg-icon-container {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  float: left;
+  padding: calc( 40px / 4 );
+}
+
+.heading-container {
+  width: 100px;
+  height: 40px;
+  margin-left: 40px;
+  line-height: 40px;
+  font-size: calc( 40px / 2 );
+}
+
+.svg-icon-container + .heading-container {
+  display: none;
+}
+
+.svg-icon-container:hover + .heading-container {
+  display: inline-block;
+}
+
+.svg-home-icon,
+.svg-close-icon {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.svg-icon-container:hover .svg-home-icon {
+  fill: #333333;
+  stroke: #333333;
+}

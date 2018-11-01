@@ -1,0 +1,64 @@
+.ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.list-element {
+    color: $LIST_ELEMENT_COLOR;
+    font-size: 20px;
+    font-variant-caps: petite-caps;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.list-element:hover {
+    background: $LIST_ELEMENT_HOVERED_BKG;
+}
+
+.clear-float {
+    clear: both;
+} 
+
+.svg-container {
+    width: calc( #{$LEFT_CONTAINER_WIDTH} / 2 );
+    height: calc( #{$LEFT_CONTAINER_WIDTH} / 2 );
+}
+
+.svg-icon-container {
+    width: $LEFT_CONTAINER_WIDTH;
+    height: $LEFT_CONTAINER_WIDTH;    
+    display: inline-block;
+    float: left;
+    padding: calc( #{$LEFT_CONTAINER_WIDTH} / 4 );
+}
+
+.heading-container {
+    width: 100px;
+    height: $LEFT_CONTAINER_WIDTH;
+    margin-left: $LEFT_CONTAINER_WIDTH;
+    line-height: $LEFT_CONTAINER_WIDTH;
+    font-size: calc( #{$LEFT_CONTAINER_WIDTH} / 2 );
+}
+
+.svg-icon-container + .heading-container {
+    display: none;
+}
+
+.svg-icon-container:hover + .heading-container {
+    display: inline-block;
+}
+
+// SVG CSS
+.svg-home-icon, 
+.svg-close-icon {
+    fill: $LIST_ELEMENT_COLOR;
+    stroke: $LIST_ELEMENT_COLOR;
+}
+
+.svg-icon-container:hover .svg-home-icon {
+    fill: $ICON_HOVERED_COLOR;
+    stroke: $ICON_HOVERED_COLOR;
+}

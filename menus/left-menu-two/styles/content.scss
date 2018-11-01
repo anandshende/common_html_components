@@ -1,0 +1,23 @@
+@import './config.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+.main-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+.left-container {
+    width: $LEFT_CONTAINER_WIDTH;
+    background: $LEFT_CONTAINER_BKG;
+    display: flex;
+}
+.right-container {
+    flex: 1;
+    background: $RIGHT_CONTAINER_BKG;
+}
