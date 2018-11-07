@@ -22,6 +22,8 @@ Open the index.html of the component you want to run...
 
 
 
+<br><br>
+<br><br>
 
 *** Icons Copyrights***
 <br>
