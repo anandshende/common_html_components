@@ -25,11 +25,9 @@ Open the index.html of the component you want to run...
 <br><br>
 <br><br>
 
-*** Icons Copyrights***
-<br>
-Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+<h5> Icons Copyrights </h5>
+<span>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
 
-<br><br>
-*** Testing Platform ***
-<br>
-<a href="https://www.browserstack.com/" title="Dave Gandy">BrowserStack</a> for Device-specific and Browser-specific testing...
+
+<h5> Testing Platform </h5>
+<span><a href="https://www.browserstack.com/" title="Dave Gandy">BrowserStack</a> for Device-specific and Browser-specific testing...</span>
