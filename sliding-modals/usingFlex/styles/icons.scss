@@ -1,0 +1,19 @@
+@import '../config.scss';
+
+.arrow {
+    cursor: pointer;
+}
+
+.right-arrow{
+
+}
+
+.left-arrow{
+
+}
+
+.close {
+    cursor: pointer;
+    fill: $closeIconFill;
+    stroke: $closeIconStroke;
+}

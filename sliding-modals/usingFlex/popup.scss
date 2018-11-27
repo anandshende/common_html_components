@@ -1,0 +1,49 @@
+@import './config.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+.pop-up-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: $background; 
+    // Background is purposely set using rgba to 
+    // not affect the child opacity.
+    justify-content: center;
+}
+
+.pop-up-container {
+    align-self: center;
+    display: flex;
+}
+
+.pop-up-content {
+    height: 500px;
+    width: 500px;
+    background: $contentBackground;
+}
+
+.arrow-container {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    margin: 0 50px;
+}
+
+object {
+    height: 100%;
+    width: 100%;
+}
+
+.close-icon-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+}

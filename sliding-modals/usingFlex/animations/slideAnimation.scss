@@ -1,0 +1,53 @@
+@import '../config.scss';
+
+
+.pop-up-content-from-left {
+    animation: slide-from-left $animationSpeed forwards;
+    transform: translate(-$translatePercentageOffsetX, -$translatePercentageOffsetY);
+    z-index: 999;
+}
+
+@keyframes slide-from-left {
+    0% { visibility: visible; }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes slide-from-right {
+    0% { visibility: visible; }
+    100% { transform: translate(0, 0); }
+}
+
+.pop-up-content-from-right {
+    animation: slide-from-right $animationSpeed forwards;
+    transform: translate($translatePercentageOffsetX, $translatePercentageOffsetY);
+    z-index: 999;
+}
+
+.pop-up-content-left {
+    animation: slide-left $animationSpeed forwards;
+}
+
+.pop-up-content-right {
+    animation: slide-right $animationSpeed forwards;
+}
+
+@keyframes slide-right {
+    0% { 
+        transform: translate(0, 0); 
+    }
+    100% { 
+        transform: translate($translatePercentageOffsetX, $translatePercentageOffsetY); 
+        visibility: hidden;
+    }
+}
+
+@keyframes slide-left {
+    0% { 
+        transform: translate(0, 0); 
+    }
+    100% { 
+        transform: translate(-$translatePercentageOffsetX, -$translatePercentageOffsetY); 
+        visibility: hidden;
+    }
+}
+

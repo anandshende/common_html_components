@@ -1,0 +1,21 @@
+// Index
+$contentBackground: #f2f2f2;
+
+// Content
+$backgroundColor: rgb(0,0,0);
+$backgroundOpacity: 0.9;
+$background: rgba($backgroundColor, $backgroundOpacity);
+
+// FadeInAnimation
+$transitionSpeed: 0.3s;
+$transitionTimingFunction: linear;
+
+// SlideAnimation
+$translatePercentageOffsetX: 50px;
+$translatePercentageOffsetY: 0%;
+$animationSpeed: 0.3s;
+
+
+//Icons Background
+$closeIconFill: #fff;
+$closeIconStroke: #fff;
