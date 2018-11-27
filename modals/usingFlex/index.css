@@ -8,13 +8,16 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display: -ms-flexbox;
   display: flex;
   background: rgba(0, 0, 0, 0.3);
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .pop-up-container {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .pop-up-content {
@@ -33,5 +36,3 @@
   opacity: 1;
   visibility: visible;
 }
-
-/*# sourceMappingURL=index.css.map */
