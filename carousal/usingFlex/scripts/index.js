@@ -1,11 +1,18 @@
 var openModal = function () {
-    Modal.show();
+    Carousal.show();
 };
 
 var svgCallback = function (evt, svgIcon) {
     switch (svgIcon) {
         case 'close':
-            Modal.hide();
+            Carousal.hide();
             break;
+        case 'arrow-right':
+            Carousal.nextSlide();
+            break;
+        case 'arrow-left':
+            Carousal.prevSlide();
+            break;
+
     }
 };
