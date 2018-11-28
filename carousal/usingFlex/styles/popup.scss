@@ -12,8 +12,6 @@
     right: 0;
     display: flex;
     background: $background; 
-    // Background is purposely set using rgba to 
-    // not affect the child opacity.
     justify-content: center;
 }
 
@@ -25,4 +23,17 @@
     height: 500px;
     width: 500px;
     background: $contentBackground;
+}
+
+.close-icon-container {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+object {
+    height: 100%;
+    width: 100%;
 }
