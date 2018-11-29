@@ -1,4 +1,18 @@
 var Carousal = {
+    slidesCount: 0,
+    currentSlide: 0,
+    createSlides: function (slidesData) {
+        this.slidesCount = slidesData.length;
+        slidesData.map(function (slideBody) {
+            var slideElement = document.createElement('div');
+            slideElement.classList.add('slide');
+            slideElement.innerText = slideBody;
+            document.getElementById('slidesContainer').appendChild(slideElement);
+        });
+        this.show();
+        this.showHideArrows();
+    },
+
     show: function () {
         document.getElementById('popUp').style.display = 'flex';
 
@@ -16,26 +30,47 @@ var Carousal = {
     },
 
     nextSlide: function () {
+        if (this.currentSlide == this.slidesCount - 1) return;
         var oldLeft = document.getElementById('slidesContainer').style.left;
-        var slideElement = document.getElementsByClassName('slide')[0];
-        var slide = window.getComputedStyle(slideElement);
-        var slideOffsetWidth = slideElement.offsetWidth;
-        var marginLeft = Number(slide.marginLeft.split('px')[0]);
-        var marginRight = Number(slide.marginRight.split('px')[0]);
-        var totalWidth = slideOffsetWidth + marginLeft + marginRight;
+        var totalWidth = this.getTotalElementWidth();
         var newLeft = (Number(oldLeft.split('px')[0]) - totalWidth) + 'px';
         document.getElementById('slidesContainer').style.left = newLeft;
+        this.currentSlide++;
+        this.showHideArrows();
     },
 
     prevSlide: function () {
+        if (this.currentSlide == 0) return;
         var oldLeft = document.getElementById('slidesContainer').style.left;
+        var totalWidth = this.getTotalElementWidth();
+        var newLeft = (Number(oldLeft.split('px')[0]) + totalWidth) + 'px';
+        document.getElementById('slidesContainer').style.left = newLeft;
+        this.currentSlide--;
+        this.showHideArrows();
+    },
+
+    getTotalElementWidth: function () {
         var slideElement = document.getElementsByClassName('slide')[0];
         var slide = window.getComputedStyle(slideElement);
         var slideOffsetWidth = slideElement.offsetWidth;
         var marginLeft = Number(slide.marginLeft.split('px')[0]);
         var marginRight = Number(slide.marginRight.split('px')[0]);
         var totalWidth = slideOffsetWidth + marginLeft + marginRight;
-        var newLeft = (Number(oldLeft.split('px')[0]) + totalWidth) + 'px';
-        document.getElementById('slidesContainer').style.left = newLeft;
+        return totalWidth;
+    },
+
+    showHideArrows: function () {
+        document.getElementById('leftArrow').style.display = (this.currentSlide != 0) ? 'block' : 'none';
+        document.getElementById('rightArrow').style.display = (this.currentSlide != this.slidesCount - 1) ? 'block' : 'none';
+
+        // if (this.currentSlide == 0) {
+        //     document.getElementById('rightArrow').style.display = 'block';
+        //     document.getElementById('leftArrow').style.display = 'none';
+        // } else if (this.currentSlide == this.slidesCount - 1) {
+        //     document.getElementById('rightArrow').style.display = 'none';
+        // } else {
+        //     document.getElementById('leftArrow').style.display = 'block';
+        //     document.getElementById('rightArrow').style.display = 'block';
+        // }
     }
 };

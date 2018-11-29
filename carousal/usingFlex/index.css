@@ -37,18 +37,20 @@ object {
 
 .arrow {
   cursor: pointer;
+  fill: #fff !important;
+  stroke: #fff !important;
 }
 
 .close {
   cursor: pointer;
-  fill: #fff;
-  stroke: #fff;
+  fill: #fff !important;
+  stroke: #fff !important;
 }
 
 .slide {
   width: 450px;
   height: 450px;
-  background: white;
+  background: #f2f2f2;
   margin: 25px;
   float: left;
 }
@@ -59,7 +61,7 @@ object {
   display: inline-block;
   position: relative;
   left: 0;
-  transition: left 300ms linear;
+  transition: left 0.3s linear;
 }
 
 .pop-up-content {

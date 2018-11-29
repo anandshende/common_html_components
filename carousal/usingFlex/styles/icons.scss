@@ -2,6 +2,8 @@
 
 .arrow {
     cursor: pointer;
+    fill: $iconFill !important;
+    stroke: $iconStroke !important; 
 }
 
 .right-arrow{
@@ -14,6 +16,6 @@
 
 .close {
     cursor: pointer;
-    fill: $closeIconFill;
-    stroke: $closeIconStroke;
+    fill: $iconFill !important;
+    stroke: $iconStroke !important;
 }

@@ -1,5 +1,11 @@
+var CarousalIndex = {
+    openModal: function () {
+        Carousal.createSlides(SLIDES_DATA);
+    }
+};
+
 var openModal = function () {
-    Carousal.show();
+    CarousalIndex.openModal();
 };
 
 var svgCallback = function (evt, svgIcon) {

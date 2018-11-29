@@ -1,5 +1,5 @@
 // Index
-$contentBackground: #f2f2f2;
+$slidesBackground: #f2f2f2;
 
 // Content
 $backgroundColor: rgb(0,0,0);
@@ -15,7 +15,16 @@ $translatePercentageOffsetX: 100%;
 $translatePercentageOffsetY: 0%;
 $animationSpeed: 0.3s;
 
-
 //Icons Background
-$closeIconFill: #fff;
-$closeIconStroke: #fff;
+$iconFill: #fff;
+$iconStroke: #fff;
+
+//Slides Dimensions
+$slideWidth: 450px;
+$slideHeight: 450px;
+$slideMargin: 25px; //(25px * 2 = 50px between two slides)
+
+//Arrows
+$arrowWidth: 50px;
+$arrowHeight: 50px;
+$arrowMargins: 0 20px;
