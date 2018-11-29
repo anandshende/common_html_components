@@ -2,7 +2,7 @@
 $slidesBackground: #f2f2f2;
 
 // Content
-$backgroundColor: rgb(0,0,0);
+$backgroundColor: rgb(0, 0, 0);
 $backgroundOpacity: 0.9;
 $background: rgba($backgroundColor, $backgroundOpacity);
 
@@ -17,7 +17,9 @@ $animationSpeed: 0.3s;
 
 //Icons Background
 $iconFill: #fff;
-$iconStroke: #fff;
+$iconStroke: $iconFill;
+$iconDisableFill: #444444;
+$iconDisableStroke: $iconDisableFill;
 
 //Slides Dimensions
 $slideWidth: 450px;

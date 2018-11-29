@@ -60,17 +60,31 @@ var Carousal = {
     },
 
     showHideArrows: function () {
-        document.getElementById('leftArrow').style.display = (this.currentSlide != 0) ? 'block' : 'none';
-        document.getElementById('rightArrow').style.display = (this.currentSlide != this.slidesCount - 1) ? 'block' : 'none';
+        if (this.currentSlide != 0) {
+            this.applyArrowCss('leftArrow', false);
+        } else {
+            this.applyArrowCss('leftArrow', true);
+        }
+        if (this.currentSlide != this.slidesCount - 1) {
+            this.applyArrowCss('rightArrow', false);
+        } else {
+            this.applyArrowCss('rightArrow', true);
+        }
+    },
 
-        // if (this.currentSlide == 0) {
-        //     document.getElementById('rightArrow').style.display = 'block';
-        //     document.getElementById('leftArrow').style.display = 'none';
-        // } else if (this.currentSlide == this.slidesCount - 1) {
-        //     document.getElementById('rightArrow').style.display = 'none';
-        // } else {
-        //     document.getElementById('leftArrow').style.display = 'block';
-        //     document.getElementById('rightArrow').style.display = 'block';
-        // }
-    }
+    applyArrowCss: function (objectId, isAdd) {
+        setTimeout(() => {
+            var objectDoc = document.getElementById(objectId);
+            var svgDoc = objectDoc.contentDocument;
+            var svgItem = svgDoc.getElementsByClassName('arrow');
+            for (var i = 0; i < svgItem.length; i++) {
+                if (isAdd) {
+                    svgItem[i].classList.add('disabled-arrow');
+                } else {
+                    svgItem[i].classList.remove('disabled-arrow');
+                }
+            }
+        }, 300);
+    },
+
 };

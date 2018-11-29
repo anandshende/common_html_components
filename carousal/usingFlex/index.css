@@ -44,6 +44,11 @@ object {
   stroke: #fff !important;
 }
 
+.disabled-arrow {
+  fill: #444444 !important;
+  stroke: #444444 !important;
+}
+
 .close {
   cursor: pointer;
   fill: #fff !important;

@@ -1,21 +1,24 @@
-@import './config.scss';
+@import "./config.scss";
 
 .arrow {
-    cursor: pointer;
-    fill: $iconFill !important;
-    stroke: $iconStroke !important; 
+  cursor: pointer;
+  fill: $iconFill !important;
+  stroke: $iconStroke !important;
 }
 
-.right-arrow{
-
+.disabled-arrow {
+  fill: $iconDisableFill !important;
+  stroke: $iconDisableStroke !important;
 }
 
-.left-arrow{
+.right-arrow {
+}
 
+.left-arrow {
 }
 
 .close {
-    cursor: pointer;
-    fill: $iconFill !important;
-    stroke: $iconStroke !important;
+  cursor: pointer;
+  fill: $iconFill !important;
+  stroke: $iconStroke !important;
 }
