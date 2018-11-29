@@ -8,13 +8,16 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display: -ms-flexbox;
   display: flex;
   background: rgba(0, 0, 0, 0.9);
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .pop-up-container {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .pop-up-content {
@@ -71,11 +74,13 @@ object {
 .arrow-container {
   width: 50px;
   height: 50px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin: 0 20px;
 }
 
 .pop-up-container {
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -97,5 +102,3 @@ object {
   display: block;
   z-index: 999;
 }
-
-/*# sourceMappingURL=index.css.map */
