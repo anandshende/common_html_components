@@ -1,0 +1,11 @@
+.text-container {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.pop-up-content-opaque {
+    position: relative;
+}

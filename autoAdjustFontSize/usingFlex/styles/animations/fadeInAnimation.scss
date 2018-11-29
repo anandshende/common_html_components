@@ -1,0 +1,12 @@
+@import '../config.scss';
+
+.pop-up-content {
+    transition:visibility $transitionSpeed $transitionTimingFunction,opacity $transitionSpeed $transitionTimingFunction;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.pop-up-content-opaque {
+    opacity: 1;
+    visibility: visible;
+}
