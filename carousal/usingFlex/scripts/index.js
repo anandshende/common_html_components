@@ -1,6 +1,10 @@
 var CarousalIndex = {
     openModal: function () {
         Carousal.createSlides(SLIDES_DATA);
+    },
+
+    objectOnload: function () {
+        Carousal.showHideArrows();
     }
 };
 
@@ -18,6 +22,20 @@ var svgCallback = function (evt, svgIcon) {
             break;
         case 'arrow-left':
             Carousal.prevSlide();
+            break;
+
+    }
+};
+
+var objectOnload = function (svgIcon) {
+    switch (svgIcon) {
+        case 'close':
+            break;
+        case 'arrow-right':
+            CarousalIndex.objectOnload();
+            break;
+        case 'arrow-left':
+            CarousalIndex.objectOnload();
             break;
 
     }
