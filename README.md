@@ -4,6 +4,13 @@
 
 After cloning, in the root directory execute 'npm i'.
 
+Set Up the local develop server with :
+> http-server {foldername}
+
+Use the link displayed by http-server in command prompt...
+
+
+
 Inside each component there are two files:
 1. autoprefixer.bat
 2. sass batch.bat
